@@ -11,13 +11,13 @@
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+-   [Simple, fast routing engine](https://laravel.com/docs/routing).
+-   [Powerful dependency injection container](https://laravel.com/docs/container).
+-   Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+-   Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+-   Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+-   [Robust background job processing](https://laravel.com/docs/queues).
+-   [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
@@ -35,19 +35,19 @@ We would like to extend our thanks to the following sponsors for funding Laravel
 
 ### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+-   **[Vehikl](https://vehikl.com/)**
+-   **[Tighten Co.](https://tighten.co)**
+-   **[WebReinvent](https://webreinvent.com/)**
+-   **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+-   **[64 Robots](https://64robots.com)**
+-   **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+-   **[Cyber-Duck](https://cyber-duck.co.uk)**
+-   **[DevSquad](https://devsquad.com/hire-laravel-developers)**
+-   **[Jump24](https://jump24.co.uk)**
+-   **[Redberry](https://redberry.international/laravel/)**
+-   **[Active Logic](https://activelogic.com)**
+-   **[byte5](https://byte5.de)**
+-   **[OP.GG](https://op.gg)**
 
 ## Contributing
 
@@ -64,4 +64,123 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
 # test_pramita
+
+## MVC Concept Documentation
+
+This project follows the Model-View-Controller (MVC) architectural pattern, which separates the application into three interconnected components:
+
+1. **Model** - Handles data and business logic
+2. **View** - Manages the presentation layer (UI)
+3. **Controller** - Controls the flow between Model and View
+
+## Employee (Pegawai) CRUD Implementation
+
+### 1. Migration
+
+The database structure for employees is defined in the migration file:
+`database/migrations/2024_06_09_000000_create_pegawai_table.php`
+
+Structure:
+
+-   `id_pegawai` (Primary Key)
+-   `nm_pegawai` (Employee Name)
+-   `alamat_pegawai` (Employee Address)
+-   `tgl_lahir_pegawai` (Date of Birth)
+-   `id_m_status_pegawai` (Status ID)
+-   `timestamps()` (Created at & Updated at)
+
+### 2. Model
+
+The model represents the employee entity and is located at:
+`app/Models/Pegawai.php`
+
+Key configurations:
+
+-   Table name: `pegawai`
+-   Primary key: `id_pegawai`
+-   Fillable fields: `nm_pegawai`, `alamat_pegawai`, `tgl_lahir_pegawai`, `id_m_status_pegawai`
+-   Date casting: `tgl_lahir_pegawai`
+
+### 3. Controller
+
+The controller handles all CRUD operations and is located at:
+`app/Http/Controllers/PegawaiController.php`
+
+Methods:
+
+-   `index()` - Displays all employees
+-   `create()` - Shows the form to create a new employee
+-   `store()` - Saves a new employee to the database
+-   `edit()` - Shows the form to edit an existing employee
+-   `update()` - Updates an existing employee in the database
+-   `destroy()` - Deletes an employee from the database
+
+### 4. Views (React Components)
+
+The frontend uses React components with Inertia.js for server-side rendering:
+
+#### Index Page
+
+`resources/js/Pages/Pegawai/Index.jsx`
+
+-   Displays a table of all employees
+-   Provides links to edit or delete each employee
+-   Includes a button to create a new employee
+
+#### Create Page
+
+`resources/js/Pages/Pegawai/Create.jsx`
+
+-   Contains a form for creating new employees
+-   Form fields for all employee attributes
+-   Validation and submission handling
+
+#### Edit Page
+
+`resources/js/Pages/Pegawai/Edit.jsx`
+
+-   Contains a form for editing existing employees
+-   Pre-populates form with existing employee data
+-   Validation and update handling
+
+### 5. Routing
+
+Routes are defined in `routes/web.php` using Laravel's resource routing:
+
+```php
+Route::resource('pegawai', PegawaiController::class);
+```
+
+This creates RESTful routes for all CRUD operations:
+
+-   GET `/pegawai` (index)
+-   GET `/pegawai/create` (create)
+-   POST `/pegawai` (store)
+-   GET `/pegawai/{pegawai}/edit` (edit)
+-   PUT/PATCH `/pegawai/{pegawai}` (update)
+-   DELETE `/pegawai/{pegawai}` (destroy)
+
+### 6. Database Connection
+
+Database configuration is managed through two files:
+
+1. `config/database.php` - Defines available database connections
+2. `.env` - Contains actual database credentials:
+    ```
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=test_pramita
+    DB_USERNAME=brianaldybramasta
+    DB_PASSWORD=brianaldybramasta
+    ```
+
+To set up the database:
+
+1. Create a MySQL database named `test_pramita`
+2. Ensure the username and password match your MySQL configuration
+3. Run migrations with: `php artisan migrate`
+
+This MVC implementation ensures a clean separation of concerns, making the codebase maintainable and scalable.
