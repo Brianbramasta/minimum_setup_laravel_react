@@ -7,33 +7,33 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+## Tentang Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Laravel adalah framework aplikasi web dengan sintaks yang ekspresif dan elegan. Kami percaya bahwa pengembangan harus menjadi pengalaman yang menyenangkan dan kreatif agar benar-benar memuaskan. Laravel menghilangkan rasa sakit dalam pengembangan dengan memudahkan tugas-tugas umum yang digunakan dalam banyak proyek web, seperti:
 
--   [Simple, fast routing engine](https://laravel.com/docs/routing).
--   [Powerful dependency injection container](https://laravel.com/docs/container).
--   Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
--   Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
--   Database agnostic [schema migrations](https://laravel.com/docs/migrations).
--   [Robust background job processing](https://laravel.com/docs/queues).
--   [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+-   [Mesin routing yang sederhana dan cepat](https://laravel.com/docs/routing).
+-   [Kontainer injeksi dependensi yang kuat](https://laravel.com/docs/container).
+-   Backend ganda untuk penyimpanan [sesi](https://laravel.com/docs/session) dan [cache](https://laravel.com/docs/cache).
+-   [ORM database](https://laravel.com/docs/eloquent) yang ekspresif dan intuitif.
+-   [Migrasi skema](https://laravel.com/docs/migrations) yang agnostik terhadap database.
+-   [Pemrosesan pekerjaan latar belakang](https://laravel.com/docs/queues) yang kuat.
+-   [Penyiaran event secara real-time](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Laravel dapat diakses, kuat, dan menyediakan alat yang diperlukan untuk aplikasi besar dan kuat.
 
-## Learning Laravel
+## Belajar Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Laravel memiliki [dokumentasi](https://laravel.com/docs) dan perpustakaan tutorial video yang paling luas dan menyeluruh di antara semua framework aplikasi web modern, membuatnya mudah untuk memulai dengan framework ini.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Anda juga dapat mencoba [Laravel Bootcamp](https://bootcamp.laravel.com), di mana Anda akan dipandu melalui pembuatan aplikasi Laravel modern dari awal.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Jika Anda tidak suka membaca, [Laracasts](https://laracasts.com) dapat membantu. Laracasts berisi ribuan tutorial video tentang berbagai topik termasuk Laravel, PHP modern, pengujian unit, dan JavaScript. Tingkatkan keterampilan Anda dengan menyelami perpustakaan video komprehensif kami.
 
-## Laravel Sponsors
+## Sponsor Laravel
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Kami ingin mengucapkan terima kasih kepada sponsor berikut yang mendanai pengembangan Laravel. Jika Anda tertarik menjadi sponsor, silakan kunjungi [program Laravel Partners](https://partners.laravel.com).
 
-### Premium Partners
+### Mitra Premium
 
 -   **[Vehikl](https://vehikl.com/)**
 -   **[Tighten Co.](https://tighten.co)**
@@ -49,111 +49,111 @@ We would like to extend our thanks to the following sponsors for funding Laravel
 -   **[byte5](https://byte5.de)**
 -   **[OP.GG](https://op.gg)**
 
-## Contributing
+## Kontribusi
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Terima kasih telah mempertimbangkan untuk berkontribusi pada framework Laravel! Panduan kontribusi dapat ditemukan di [dokumentasi Laravel](https://laravel.com/docs/contributions).
 
-## Code of Conduct
+## Kode Etik
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Untuk memastikan bahwa komunitas Laravel ramah bagi semua, silakan tinjau dan patuhi [Kode Etik](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
+## Kerentanan Keamanan
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Jika Anda menemukan kerentanan keamanan dalam Laravel, silakan kirim email ke Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). Semua kerentanan keamanan akan segera ditangani.
 
-## License
+## Lisensi
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Framework Laravel adalah perangkat lunak open-source yang dilisensikan di bawah [lisensi MIT](https://opensource.org/licenses/MIT).
 
 # test_pramita
 
-## MVC Concept Documentation
+## Dokumentasi Konsep MVC
 
-This project follows the Model-View-Controller (MVC) architectural pattern, which separates the application into three interconnected components:
+Proyek ini mengikuti pola arsitektur Model-View-Controller (MVC), yang memisahkan aplikasi menjadi tiga komponen yang saling terhubung:
 
-1. **Model** - Handles data and business logic
-2. **View** - Manages the presentation layer (UI)
-3. **Controller** - Controls the flow between Model and View
+1. **Model** - Menangani data dan logika bisnis
+2. **View** - Mengelola lapisan presentasi (UI)
+3. **Controller** - Mengontrol alur antara Model dan View
 
-## Employee (Pegawai) CRUD Implementation
+## Implementasi CRUD Pegawai (Pegawai)
 
-### 1. Migration
+### 1. Migrasi
 
-The database structure for employees is defined in the migration file:
+Struktur database untuk pegawai didefinisikan dalam file migrasi:
 `database/migrations/2024_06_09_000000_create_pegawai_table.php`
 
-Structure:
+Struktur:
 
--   `id_pegawai` (Primary Key)
--   `nm_pegawai` (Employee Name)
--   `alamat_pegawai` (Employee Address)
--   `tgl_lahir_pegawai` (Date of Birth)
--   `id_m_status_pegawai` (Status ID)
--   `timestamps()` (Created at & Updated at)
+-   `id_pegawai` (Kunci Utama)
+-   `nm_pegawai` (Nama Pegawai)
+-   `alamat_pegawai` (Alamat Pegawai)
+-   `tgl_lahir_pegawai` (Tanggal Lahir)
+-   `id_m_status_pegawai` (ID Status)
+-   `timestamps()` (Dibuat pada & Diperbarui pada)
 
 ### 2. Model
 
-The model represents the employee entity and is located at:
+Model mewakili entitas pegawai dan terletak di:
 `app/Models/Pegawai.php`
 
-Key configurations:
+Konfigurasi utama:
 
--   Table name: `pegawai`
--   Primary key: `id_pegawai`
--   Fillable fields: `nm_pegawai`, `alamat_pegawai`, `tgl_lahir_pegawai`, `id_m_status_pegawai`
--   Date casting: `tgl_lahir_pegawai`
+-   Nama tabel: `pegawai`
+-   Kunci utama: `id_pegawai`
+-   Field yang dapat diisi: `nm_pegawai`, `alamat_pegawai`, `tgl_lahir_pegawai`, `id_m_status_pegawai`
+-   Casting tanggal: `tgl_lahir_pegawai`
 
 ### 3. Controller
 
-The controller handles all CRUD operations and is located at:
+Controller menangani semua operasi CRUD dan terletak di:
 `app/Http/Controllers/PegawaiController.php`
 
-Methods:
+Metode:
 
--   `index()` - Displays all employees
--   `create()` - Shows the form to create a new employee
--   `store()` - Saves a new employee to the database
--   `edit()` - Shows the form to edit an existing employee
--   `update()` - Updates an existing employee in the database
--   `destroy()` - Deletes an employee from the database
+-   `index()` - Menampilkan semua pegawai
+-   `create()` - Menampilkan form untuk membuat pegawai baru
+-   `store()` - Menyimpan pegawai baru ke database
+-   `edit()` - Menampilkan form untuk mengedit pegawai yang ada
+-   `update()` - Memperbarui pegawai yang ada di database
+-   `destroy()` - Menghapus pegawai dari database
 
-### 4. Views (React Components)
+### 4. Views (Komponen React)
 
-The frontend uses React components with Inertia.js for server-side rendering:
+Frontend menggunakan komponen React dengan Inertia.js untuk server-side rendering:
 
-#### Index Page
+#### Halaman Index
 
 `resources/js/Pages/Pegawai/Index.jsx`
 
--   Displays a table of all employees
--   Provides links to edit or delete each employee
--   Includes a button to create a new employee
+-   Menampilkan tabel semua pegawai
+-   Menyediakan tautan untuk mengedit atau menghapus setiap pegawai
+-   Menyertakan tombol untuk membuat pegawai baru
 
-#### Create Page
+#### Halaman Create
 
 `resources/js/Pages/Pegawai/Create.jsx`
 
--   Contains a form for creating new employees
--   Form fields for all employee attributes
--   Validation and submission handling
+-   Berisi form untuk membuat pegawai baru
+-   Field form untuk semua atribut pegawai
+-   Validasi dan penanganan pengiriman
 
-#### Edit Page
+#### Halaman Edit
 
 `resources/js/Pages/Pegawai/Edit.jsx`
 
--   Contains a form for editing existing employees
--   Pre-populates form with existing employee data
--   Validation and update handling
+-   Berisi form untuk mengedit pegawai yang ada
+-   Mengisi form dengan data pegawai yang ada
+-   Validasi dan penanganan pembaruan
 
 ### 5. Routing
 
-Routes are defined in `routes/web.php` using Laravel's resource routing:
+Rute didefinisikan di `routes/web.php` menggunakan routing sumber daya Laravel:
 
 ```php
 Route::resource('pegawai', PegawaiController::class);
 ```
 
-This creates RESTful routes for all CRUD operations:
+Ini membuat rute RESTful untuk semua operasi CRUD:
 
 -   GET `/pegawai` (index)
 -   GET `/pegawai/create` (create)
@@ -162,12 +162,12 @@ This creates RESTful routes for all CRUD operations:
 -   PUT/PATCH `/pegawai/{pegawai}` (update)
 -   DELETE `/pegawai/{pegawai}` (destroy)
 
-### 6. Database Connection
+### 6. Koneksi Database
 
-Database configuration is managed through two files:
+Konfigurasi database dikelola melalui dua file:
 
-1. `config/database.php` - Defines available database connections
-2. `.env` - Contains actual database credentials:
+1. `config/database.php` - Mendefinisikan koneksi database yang tersedia
+2. `.env` - Berisi kredensial database aktual:
     ```
     DB_CONNECTION=mysql
     DB_HOST=127.0.0.1
@@ -177,10 +177,10 @@ Database configuration is managed through two files:
     DB_PASSWORD=brianaldybramasta
     ```
 
-To set up the database:
+Untuk mengatur database:
 
-1. Create a MySQL database named `test_pramita`
-2. Ensure the username and password match your MySQL configuration
-3. Run migrations with: `php artisan migrate`
+1. Buat database MySQL bernama `test_pramita`
+2. Pastikan username dan password sesuai dengan konfigurasi MySQL Anda
+3. Jalankan migrasi dengan: `php artisan migrate`
 
-This MVC implementation ensures a clean separation of concerns, making the codebase maintainable and scalable.
+Implementasi MVC ini memastikan pemisahan kekhawatiran yang jelas, membuat codebase mudah dipelihara dan dapat diskalakan.
