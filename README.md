@@ -172,14 +172,14 @@ Konfigurasi database dikelola melalui dua file:
     DB_CONNECTION=mysql
     DB_HOST=127.0.0.1
     DB_PORT=3306
-    DB_DATABASE=test_pramita
-    DB_USERNAME=brianaldybramasta
-    DB_PASSWORD=brianaldybramasta
+    DB_DATABASE=your_db_name
+    DB_USERNAME=root
+    DB_PASSWORD=''
     ```
 
 Untuk mengatur database:
 
-1. Buat database MySQL bernama `test_pramita`
+1. Buat database MySQL bernama `your_db_name`
 2. Pastikan username dan password sesuai dengan konfigurasi MySQL Anda
 3. Jalankan migrasi dengan: `php artisan migrate`
 
